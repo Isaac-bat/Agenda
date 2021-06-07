@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="css/estilos.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+      integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap" rel="stylesheet">
+
+    <title>Agenda</title>
+  </head>
+  <body>
+    <section class="container">
+      <div class="form--container">
+        <form class="form">
+          <label id="lblNombre" for="">
+            <p>Nombre de contacto</p>
+            <input id="nombre" type="text" />
+          </label>
+          <label for="">
+            <p>Correo</p>
+            <input id="correo" type="email" />
+          </label>
+          <label for="">
+            <p>Teléfono</p>
+            <input id="telefono" type="phone" />
+          </label>
+          <button onclick="agregarContacto()">Agregar</button>
+          <button class="buscarContacto" onclick="buscarContacto()">
+            Buscar Contacto
+          </button>
+        </form>
+      </div>
+
+      <div class="contacto contacto--container" id="contacto"></div>
+    </section>
+    <script src="js/funciones.js" async="true"></script>
+  </body>
+</html>
